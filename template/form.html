@@ -1,0 +1,29 @@
+<form action="{{ url_for("gfg")}}" method="post">
+<label for="spend">Enter spend: </label>
+<input type="text" id="spend" name="spend" placeholder="Enter Here">
+<br><br>
+
+<label for="administration">Bedrooms: </label>
+<input type="text" id="administration" name="administration" placeholder="Enter Here">
+
+<br><br>
+<label for="marketspend">Bathroom: </label>
+<input type="text" id="marketspend" name="marketspend" placeholder="Enter Here">
+
+<br><br>
+<label for="profit">SquareFeet: </label>
+<input type="text" id="profit" name="profit" placeholder="Enter Here">
+
+<br><br>
+<label for="state">Select your city: </label>
+<select name="state" id="state" required="required">
+                                <option value="shorreline">shorreline</option>
+                                <option value="seattle">seattle</option>
+                                <option value="bellevue">bellevue</option>
+                            </select>
+<button type="submit">Submit</button>
+
+ <br>
+        <h3>{{ prediction_text }}</h3>
+
+<br>
